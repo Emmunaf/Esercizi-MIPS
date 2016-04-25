@@ -1,6 +1,5 @@
 # Esercizio7, Calcola n-esimo numero della serie fibonacci
 	.data
-contatore:	.word 0
 
 	.text
 main:	li	$v0, 5		# Ask user for input (n)
