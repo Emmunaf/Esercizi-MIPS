@@ -16,8 +16,8 @@ ciclo:	move	$t2, $t0	# Temp var. for swapping ($t2)
 	addi	$t3, $t3, 1	# i++
 	beq	$t3, $s0, end	# We reached the n-th number of Fibonacci
 	j	ciclo
-lt2:	li	$t0, 1
-end:	move	$a0, $t0
+lt2:	li	$t0, 1		# print 1 if n < 2
+end:	move	$a0, $t0	# Print the result and exit
 	li	$v0, 1
 	syscall
 	li	$v0, 10
